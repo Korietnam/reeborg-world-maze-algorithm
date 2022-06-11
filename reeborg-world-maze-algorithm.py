@@ -6,21 +6,21 @@
 
 # NOTE: this is not intended to be used in a stand alone python terminal!
 
-def turn_right():
-    turn_left()
-    turn_left()
-    turn_left()
+# def turn_right():
+#     turn_left()
+#     turn_left()
+#     turn_left()
 
-while not at_goal():
-    if front_is_clear() and wall_on_right():
-        move()
-    elif front_is_clear() and right_is_clear():
-        turn_right()
-        if right_is_clear():
-            move()
-    elif wall_in_front() and wall_on_right():
-        turn_left()
-    elif wall_in_front() and right_is_clear():
-        turn_right()
-        if right_is_clear():
-            move()
+# while not at_goal():
+#     if front_is_clear() and wall_on_right():
+#         move()
+#     elif front_is_clear() and right_is_clear():
+#         turn_right()
+#         if right_is_clear():
+#             move()
+#     elif wall_in_front() and wall_on_right():
+#         turn_left()
+#     elif wall_in_front() and right_is_clear():
+#         turn_right()
+#         if right_is_clear():
+#             move()
